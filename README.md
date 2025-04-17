@@ -1,6 +1,7 @@
 # Word Challenge 汉字配对游戏
 
 这是一个有趣的汉字配对游戏，玩家需要将汉字与对应的图片进行配对。
+![image](https://github.com/user-attachments/assets/b2f51840-0203-48a6-a449-839b6994cc47)
 
 ## 游戏规则
 
