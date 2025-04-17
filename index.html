@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Challenge</h1>
+        
+        <div class="game-info">
+            <div class="score-container">
+                <span>分数：</span>
+                <span id="score">0</span>
+            </div>
+            <div class="level-container">
+                <span>第</span>
+                <span id="level">1</span>
+                <span>关</span>
+            </div>
+            <div class="lives-container">
+                <span></span>
+                <span id="lives">3</span>
+            </div>
+            <div class="sound-control">
+                <button id="toggleSound" class="sound-button">
+                    <span class="sound-on">🔊</span>
+                    <span class="sound-off" style="display: none;">🔇</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="level-progress">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="progress-text">0/0</div>
+        </div>
+        
+        <div class="game-container">
+            <div class="left-panel">
+                <div class="characters">
+                    <!-- 汉字将通过 JavaScript 动态添加 -->
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="images">
+                    <!-- 图片将通过 JavaScript 动态添加 -->
+                </div>
+            </div>
+        </div>
+
+        <button id="startButton">开始游戏</button>
+    </div>
+
+    <!-- 关卡过渡动画 -->
+    <div class="level-transition">
+        <div class="level-transition-content">
+            <div class="level-text"></div>
+            <div class="level-stars"></div>
+        </div>
+    </div>
+
+    <!-- 通关动画 -->
+    <div class="game-complete">
+        <div class="game-complete-content">
+            <div class="complete-title">恭喜通关！</div>
+            <div class="complete-score">最终得分：<span>0</span></div>
+            <div class="complete-stars"></div>
+        </div>
+    </div>
+
+    <!-- 游戏结束动画 -->
+    <div class="game-over" style="display: none;">
+        <div class="game-over-content">
+            <div class="game-over-text">
+                <h2>游戏结束</h2>
+                <div class="final-score">最终得分：<span class="final-score-value">0</span></div>
+                <div class="game-over-icon">💔</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
